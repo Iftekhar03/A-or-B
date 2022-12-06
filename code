@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void) {
+  int t, n, x, y, z, count_1,count_2, i, j, a, b, c;
+  scanf("%d", &t);
+  while (t--) {
+    scanf("%d %d", &x, &y);
+    j= x + y;
+    count_1=(500 - (x * 2)) + (1000 - (j * 4));
+    count_2=(1000 - (y * 4))+(500 - (j * 2));
+    if(count_1>count_2)
+      printf("%d\n", count_1);
+    else
+      printf("%d\n",count_2);
+  }
+  return 0;
+}
